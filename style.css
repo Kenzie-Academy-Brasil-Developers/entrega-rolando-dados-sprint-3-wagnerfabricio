@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+
+figure {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+}
+
+figcaption {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#dice-gif {
+  position: relative;
+  top: -100%;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border: none;
+  background-color: #cfc;
+  font: 700 16px Arial;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  font-size: 18px;
+}
