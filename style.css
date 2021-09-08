@@ -1,6 +1,9 @@
 /* ----------------------- BASICS ----------------------- */
 body {
-  background-color: rgb(22, 22, 22);
+  background: url(assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #050b0d-;
 }
 
 h1 {
@@ -29,7 +32,7 @@ button {
   margin: 20px auto;
   padding: 10px 30px;
   border: none;
-  background-color: #cfc;
+  background-color: rgb(230, 223, 223);
   font: 700 16px Arial;
   border-radius: 4px;
   cursor: pointer;
@@ -37,7 +40,7 @@ button {
 }
 
 button:hover {
-  font-size: 18px;
+  background-color: #a63e26;
 }
 
 /* ------------------------ EXTRA ----------------------- */
@@ -47,8 +50,8 @@ button:hover {
 
 /* ------------------------ MAIN ------------------------ */
 main {
-  max-width: 400px;
-  background-color: lightgrey;
+  max-width: 420px;
+  background-color: #f2b872;
   margin: 30px auto;
   padding: 20px;
   border-radius: 5px;
@@ -75,7 +78,7 @@ main {
 }
 
 #containerGraphic {
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   /* margin: 20px auto; */
 }
 
@@ -92,4 +95,11 @@ main {
   justify-content: center;
   align-items: flex-start;
   padding-left: 1px;
+}
+
+/* -------------------- MEDIA QUERIE -------------------- */
+@media (min-width: 460px) {
+  .flex {
+    justify-content: flex-start;
+  }
 }
