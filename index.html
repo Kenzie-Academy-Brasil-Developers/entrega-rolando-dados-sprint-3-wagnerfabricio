@@ -10,17 +10,24 @@
 </head>
 
 <body>
-    <h1>Rolando dados</h1>
-
-    <!-- ----------------- DICE ANIMATION ------------------ -->
-    <figure>
-        <img id="dice-image" src="assets/img/dado-imagem.jpg" alt="Dices">
-        <img id="dice-gif" src="assets/img/dado-imagem-animada.gif" alt="Gif dados rolando">
-        <figcaption>Dados rolando</figcaption>
-    </figure>
-
-    <!-- ---------------- ROLL DICES BUTTON ---------------- -->
-    <button id="roll-dices">Click to roll</button>
+    <main>
+        <h1>Rolando dados</h1>
+        <!-- ----------------- DICE ANIMATION ------------------ -->
+        <figure>
+            <img id="dice-image" src="assets/img/dado-imagem.jpg" alt="Dices">
+            <img id="dice-gif" class="hidden" src="assets/img/dado-imagem-animada.gif" alt="Gif dados rolando">
+            <figcaption>Dados rolando</figcaption>
+        </figure>
+        <!-- ---------------- ROLL DICES BUTTON ---------------- -->
+        <button id="roll-dices">Click to roll</button>
+        <!-- --------------------- RESULTS --------------------- -->
+        <h2 class="hidden remove">Os dados foram rodados 1000 vezes!!!</h2>
+        <h3 class="hidden remove">Veja as estatísticas:</h3>
+        <div class="flex">
+            <div id="statisticsResults" class="hidden results remove"></div>
+            <div id="containerGraphic" class="hidden remove"></div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>

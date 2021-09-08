@@ -1,5 +1,11 @@
+/* ----------------------- BASICS ----------------------- */
+body {
+  background-color: rgb(22, 22, 22);
+}
+
 h1 {
   text-align: center;
+  margin: 0 0 20px;
 }
 
 figure {
@@ -13,18 +19,14 @@ figcaption {
   display: none;
 }
 
-.hidden {
-  opacity: 0;
-}
-
-#dice-gif {
-  position: relative;
-  top: -100%;
+p {
+  line-height: 20px;
+  margin: 0;
 }
 
 button {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 10px 30px;
   border: none;
   background-color: #cfc;
@@ -36,4 +38,58 @@ button {
 
 button:hover {
   font-size: 18px;
+}
+
+/* ------------------------ EXTRA ----------------------- */
+.hidden {
+  opacity: 0;
+}
+
+/* ------------------------ MAIN ------------------------ */
+main {
+  max-width: 400px;
+  background-color: lightgrey;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px black;
+}
+
+#dice-gif {
+  position: relative;
+  top: -100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.results {
+  margin-right: 20px;
+}
+
+#statisticsResults {
+  margin-bottom: 20px;
+}
+
+#containerGraphic {
+  background-color: lightgrey;
+  /* margin: 20px auto; */
+}
+
+.graphic {
+  border: 1px solid grey;
+  background-color: #cfc;
+  height: 13px;
+  margin: 5px;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 1px;
 }
